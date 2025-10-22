@@ -236,7 +236,7 @@ body main {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
    
     body {
         
@@ -254,7 +254,7 @@ body main {
     .navegacion {
         width: 10vw; 
         float: left;
-		min-width: 10vh;
+		min-width: 100px;
 	}
     .navegacion img {
         width: 10vw;
@@ -276,6 +276,8 @@ body main {
 	#universo {
 		grid-row: 7/10; 
 	}
+}
+@media (max-width: 768px) {
 	#ganchoa {
 	display: none;
 }
@@ -283,5 +285,6 @@ body main {
 	display: none;
 }
 }
+
 
 
