@@ -1,0 +1,279 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	height: 300vh;
+	background-color: #609EE7;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 15vh 20vh 60vh 15vh 10vh 60vh 15vh 10vh 95vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+#pulpo {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+#gift {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	
+	
+}
+
+
+body header {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+
+.navegacion {
+	width: 10vw;
+	height: auto;
+	float: left;
+}
+.navegacion img {
+	width: 10vw;
+	height: auto;
+	transition: all 2s ease 0s;
+}
+.navegacion img:hover {
+	width: 12vw;
+	height: auto;
+	
+	
+}
+body main {
+	grid-column: 1/2;
+	grid-row: 3/6;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);	
+}
+#fondo {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+	grid-column: 1/11;
+	grid-row: 1/11;
+}
+
+#concha {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 4/8;
+	grid-row: 2/6;
+	animation: flotar 10s ease-in-out infinite;
+	
+}
+#pez {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 9/10;
+	grid-row: 3/4;
+	animation: flotar 4s ease-in-out infinite;
+}
+#pescado {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 2/3;
+	grid-row: 6/7;
+	animation: flotar 3s ease-in-out infinite;
+}
+#fish {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 7/8;
+	grid-row: 7/8;
+	animation: flotar 4s ease-in-out infinite;
+}
+
+#nosotros {
+	grid-column: 1/2;
+	grid-row: 4/9;
+	z-index: 2;
+	background-image: url(../img/fondito.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+}
+#mantaraya {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 2/4;
+	grid-row: 6/7;
+	animation: flotar 4s ease-in-out infinite;
+}
+#fishao {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 8/9;
+	grid-row: 5/6;
+	animation: flotar 6s ease-in-out infinite;
+}
+#burbuja {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 4/8;
+	grid-row: 5/9;
+	animation: flotar 9s ease-in-out infinite;
+}
+#fishing {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 9/10;
+	grid-row: 7/8;
+	animation: flotar 7s ease-in-out infinite;
+}
+#ganchoa {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 9/10;
+	grid-row: 5/7;
+	animation: flotar 6s ease-in-out infinite;
+}
+#gancho {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 1/3;
+	grid-row: 5/8;
+	animation: flotar 6s ease-in-out infinite;
+}
+
+
+
+#universo {
+	grid-column: 1/2;
+	grid-row: 7/10;
+	z-index: 3;
+	background-image: url(../img/fondito_1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+}
+#fondote {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	grid-column: 1/11;
+	grid-row: 1/11;
+	
+}
+#lataa {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 8/9;
+	grid-row: 4/5;
+	animation: flotar 4s ease-in-out infinite;
+}
+#latab {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 2/3;
+	grid-row: 5/6;
+	animation: flotar 10s ease-in-out infinite;
+}
+#latac {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 9/10;
+	grid-row: 6/7;
+	animation: flotar 8s ease-in-out infinite;
+}
+#latad {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	grid-column: 4/8;
+	grid-row: 3/7;
+	animation: flotar 9s ease-in-out infinite;
+}
+
+
+
+
+
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+   
+    body {
+        
+        grid-template-rows: 15vh 20vh 60vh 15vh 10vh 60vh 15vh 10vh 95vh; 
+    }
+
+    
+    body header {
+        grid-row: 2/3; 
+        justify-content: center;
+		align-items: center; 
+    }
+
+   
+    .navegacion {
+        width: 10vw; 
+        float: left; 
+	}
+    .navegacion img {
+        width: 10vw;
+        transition: all 2s ease 0s;
+		transform: none; 
+    }
+    .navegacion img:hover {
+        width: 12vw; 
+    }
+    body main {
+        grid-row: 3/6;
+    }
+	
+	#nosotros {
+		grid-row: 4/9; 
+	}
+
+    
+	#universo {
+		grid-row: 7/10; 
+	}
+}
+
