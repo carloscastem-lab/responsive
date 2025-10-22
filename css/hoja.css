@@ -253,7 +253,8 @@ body main {
    
     .navegacion {
         width: 10vw; 
-        float: left; 
+        float: left;
+		min-width: 10vh;
 	}
     .navegacion img {
         width: 10vw;
@@ -275,5 +276,12 @@ body main {
 	#universo {
 		grid-row: 7/10; 
 	}
+	#ganchoa {
+	display: none;
 }
+#gancho {
+	display: none;
+}
+}
+
 
